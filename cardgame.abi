@@ -1,0 +1,196 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT ",
+    "version": "eosio::abi/1.1",
+    "types": [],
+    "structs": [
+        {
+            "name": "endgame",
+            "base": "",
+            "fields": [
+                {
+                    "name": "username",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "game",
+            "base": "",
+            "fields": [
+                {
+                    "name": "life_player",
+                    "type": "int8"
+                },
+                {
+                    "name": "life_ai",
+                    "type": "int8"
+                },
+                {
+                    "name": "deck_player",
+                    "type": "uint8[]"
+                },
+                {
+                    "name": "deck_ai",
+                    "type": "uint8[]"
+                },
+                {
+                    "name": "hand_player",
+                    "type": "uint8[]"
+                },
+                {
+                    "name": "hand_ai",
+                    "type": "uint8[]"
+                },
+                {
+                    "name": "selected_card_player",
+                    "type": "uint8"
+                },
+                {
+                    "name": "selected_card_ai",
+                    "type": "uint8"
+                },
+                {
+                    "name": "status",
+                    "type": "int8"
+                },
+                {
+                    "name": "life_lost_player",
+                    "type": "uint8"
+                },
+                {
+                    "name": "life_lost_ai",
+                    "type": "uint8"
+                }
+            ]
+        },
+        {
+            "name": "login",
+            "base": "",
+            "fields": [
+                {
+                    "name": "username",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "nextround",
+            "base": "",
+            "fields": [
+                {
+                    "name": "username",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "playcard",
+            "base": "",
+            "fields": [
+                {
+                    "name": "username",
+                    "type": "name"
+                },
+                {
+                    "name": "player_card_hand_idx",
+                    "type": "uint8"
+                }
+            ]
+        },
+        {
+            "name": "seed",
+            "base": "",
+            "fields": [
+                {
+                    "name": "key",
+                    "type": "uint64"
+                },
+                {
+                    "name": "value",
+                    "type": "uint32"
+                }
+            ]
+        },
+        {
+            "name": "startgame",
+            "base": "",
+            "fields": [
+                {
+                    "name": "username",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "user_info",
+            "base": "",
+            "fields": [
+                {
+                    "name": "username",
+                    "type": "name"
+                },
+                {
+                    "name": "usermessage",
+                    "type": "string"
+                },
+                {
+                    "name": "win_count",
+                    "type": "uint64"
+                },
+                {
+                    "name": "lost_count",
+                    "type": "uint64"
+                },
+                {
+                    "name": "game_data",
+                    "type": "game"
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "name": "endgame",
+            "type": "endgame",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "login",
+            "type": "login",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "nextround",
+            "type": "nextround",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "playcard",
+            "type": "playcard",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "startgame",
+            "type": "startgame",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "seed",
+            "type": "seed",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "users",
+            "type": "user_info",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "ricardian_clauses": [],
+    "variants": []
+}
